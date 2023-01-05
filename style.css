@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 840px;
+    width: 500px;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color:#000000;
+}
+
+.calculator-input{
+    background-color:#000000;
+    height: 250px;
+    width:460px;
+    position: absolute;
+    top:70px;
+    border: none;
+    color: white;
+    text-align: right;
+    font-size: 65px;
+
+}
+
+
+.buton{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    font-size: 45px;
+
+}
+
+/* .buton:hover{
+    cursor: pointer;
+} */
+
+.buton-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 15px;
+    margin-top:250px;
+}
+
+.num-0{
+    width: 215px;
+    justify-content: start;
+    padding-left: 40px;
+}
+
+.acik-gri{
+    background-color: rgb(160, 160, 160);
+}
+
+.gri{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    
+}
+
+.turuncu{
+    background-color:#F1A33C;
+    color: white;
+
+}
+
+.acik-gri:hover{
+    opacity: 0.4;
+}
+
+.gri:hover{
+    opacity: 0.4;
+}
+
+.turuncu:hover{
+    opacity: 0.4;
+}
