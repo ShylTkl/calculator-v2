@@ -51,9 +51,9 @@ body{
 
 }
 
-/* .buton:hover{
+ .buton:hover{
     cursor: pointer;
-} */
+} 
 
 .buton-container{
     display: flex;
