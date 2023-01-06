@@ -123,12 +123,16 @@ function inputYuzde(){
 
 
 function dondu(){
-    if(!displayValue.includes('?')){
+    if(!displayValue.includes('-')){
         displayValue = '-' + displayValue;
+    }
+    else if (!displayValue.includes('+')){
+        displayValue = displayValue.replace('-','');
 
     }
-
+    
 }
+
 
 
 
