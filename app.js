@@ -32,11 +32,19 @@ keys.addEventListener('click', function (e){
         case '.':
             inputDecimal();
             break;
+
+        case '?':
+            dondu();    
+            break;
+
+        case '%':
+            inputYuzde();
+            break;
         
         case 'clear':
             clear(); 
             break; 
-
+          
 
         default:
             inputNumber(element.value); 
@@ -106,5 +114,25 @@ function inputDecimal(){
 function clear(){
     displayValue = '0';
 }
+
+function inputYuzde(){
+    let mod ;
+    mod = displayValue /100;
+    displayValue = mod;
+}
+
+
+function dondu(){
+    if(!displayValue.includes('?')){
+        displayValue = '-' + displayValue;
+
+    }
+
+}
+
+
+
+
+
 
 
