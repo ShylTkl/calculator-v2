@@ -3,12 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.calculator-input{
+    background-color:#000000;
+    height: 228px;
+    width:352px;
+    position: absolute;
+    top:-9px;
+    border: none;
+    color: white;
+    text-align: right;
+    font-size: 65px;
+    border-radius: 80px;
+
 }
 
-body{
+/* body{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -24,18 +36,6 @@ body{
     background-color:#000000;
 }
 
-.calculator-input{
-    background-color:#000000;
-    height: 250px;
-    width:460px;
-    position: absolute;
-    top:70px;
-    border: none;
-    color: white;
-    text-align: right;
-    font-size: 65px;
-
-}
 
 
 .buton{
@@ -51,9 +51,6 @@ body{
 
 }
 
- .buton:hover{
-    cursor: pointer;
-} 
 
 .buton-container{
     display: flex;
@@ -68,8 +65,11 @@ body{
     width: 215px;
     justify-content: start;
     padding-left: 40px;
-}
+}*/
 
+.buton:hover{
+   cursor: pointer;
+} 
 .acik-gri{
     background-color: rgb(160, 160, 160);
 }
@@ -96,4 +96,53 @@ body{
 
 .turuncu:hover{
     opacity: 0.4;
+} 
+
+
+  .calculator{
+   display: grid;
+   align-items: flex-end; 
+   height:41rem ;
+   background-color: black;
+   color: white;
+   width: 22rem;
+   border-radius: 2rem;
+   text-align: center;
+   margin: auto;
 }
+
+.buton-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 27rem;
+    align-items: end;
+    justify-content: center;
+    margin:0.8rem ;
+  }
+
+.buton{
+   height: 80%;
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 2.1rem;
+   font-weight: 400;
+   padding: 0.22rem;
+   margin: auto;
+   font-family: 'Roboto', sans-serif;
+
+}
+
+
+.num-0{
+ border-radius:35px ;
+  grid-column:1/3 ;
+  margin-left: 2px;
+  width: 9.5rem;
+
+}
+
+
