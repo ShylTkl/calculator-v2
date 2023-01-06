@@ -100,7 +100,7 @@ body {
 @media screen and (min-width:390px) {
     .calculator{
         transform: scale(0.8);
-        max-width: 390px;
+        max-width: 410px;
     }
 }
 
